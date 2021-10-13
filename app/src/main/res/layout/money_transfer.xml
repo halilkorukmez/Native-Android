@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:background="@drawable/sayfa_back"
+            android:isScrollContainer="false">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.google.android.material.bottomnavigation.BottomNavigationView
+                    android:layout_width="match_parent"
+                    android:layout_height="73dp"
+                    android:background="@drawable/trans_button"
+                    android:hapticFeedbackEnabled="true">
+
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="0dp"
+                        android:background="@drawable/trans_button"
+                        android:gravity="center"
+                        android:text="BAKIYE AKTAR"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/button2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|start"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/trans_button"
+                        app:icon="@android:drawable/ic_menu_revert"
+                        app:iconGravity="textTop"
+                        app:iconPadding="0dp"
+                        app:iconSize="25dp"
+                        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+                </com.google.android.material.bottomnavigation.BottomNavigationView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp">
+                <com.google.android.material.bottomnavigation.BottomNavigationView
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:background="@drawable/trans_button"
+                    >
+
+                    <Button
+                        android:id="@+id/button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|end"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/trans_button"
+                        android:textAllCaps="false"
+                        app:backgroundTint="@null"
+                        app:icon="@drawable/more"
+                        app:iconGravity="textTop"
+                        app:iconPadding="0dp"
+                        app:iconSize="40dp"
+                        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+                    <EditText
+                        android:layout_width="168dp"
+                        android:layout_height="55dp"
+                        android:layout_marginHorizontal="90dp"
+                        android:layout_marginTop="0dp"
+                        android:background="@drawable/trans_button"
+                        android:text="452,46"
+                        android:textColor="@color/white"
+                        android:textSize="50dp"
+                        android:textStyle="bold"
+                        tools:ignore="TouchTargetSizeCheck" />
+                </com.google.android.material.bottomnavigation.BottomNavigationView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.google.android.material.bottomnavigation.BottomNavigationView
+                    android:layout_width="match_parent"
+                    android:layout_height="73dp"
+                    android:background="@drawable/trans_button"
+                    android:hapticFeedbackEnabled="true">
+
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="0dp"
+                        android:background="@drawable/trans_button"
+                        android:gravity="center"
+                        android:text="OZAN KARTLARINIZ"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+
+                </com.google.android.material.bottomnavigation.BottomNavigationView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fillViewport="true">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:gravity="top"
+
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            >
+
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="55dp"
+                                android:layout_marginVertical="10dp"
+                                android:layout_marginStart="80dp"
+                                android:background="@drawable/scroll_dsgn"
+
+
+                                android:text="****************"
+                                android:textColor="#FFFFFF"
+                                android:textSize="22dp"
+                                app:backgroundTint="#262A47"
+                                app:icon="@drawable/mastercard"
+
+                                app:iconSize="70dp"
+                                app:iconTintMode="multiply"
+                                tools:ignore="TextContrastCheck" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="55dp"
+                                android:layout_marginVertical="10dp"
+                                android:background="@drawable/scroll_dsgn"
+
+
+                                android:text="****************"
+                                android:textColor="#FFFFFF"
+                                android:textSize="22dp"
+                                app:backgroundTint="#262A47"
+                                app:icon="@drawable/mastercard"
+
+                                app:iconSize="70dp"
+                                app:iconTintMode="multiply"
+                                tools:ignore="TextContrastCheck" />                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="55dp"
+                                android:layout_marginVertical="10dp"
+                                android:background="@drawable/scroll_dsgn"
+
+
+                                android:text="****************"
+                                android:textColor="#FFFFFF"
+                                android:textSize="22dp"
+                                app:backgroundTint="#262A47"
+                                app:icon="@drawable/mastercard"
+
+                                app:iconSize="70dp"
+                                app:iconTintMode="multiply"
+                                tools:ignore="TextContrastCheck" />                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+               android:layout_marginBottom="25dp">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                   android:layout_marginHorizontal="25dp"
+                    android:layout_marginTop="15dp"
+
+                    android:background="@drawable/btn_bg"
+                    android:gravity="center"
+                    android:text="TUm Bakiyeyi Aktar"
+                    android:textAllCaps="false"
+                    app:backgroundTint="#42AC4D"
+                    app:icon="@drawable/back"
+                    app:iconGravity="end"
+                    app:iconSize="25dp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

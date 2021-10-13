@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#383c50
+"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#383c50"
+                app:backgroundTint="@null"
+                app:icon="@drawable/download"
+                app:iconGravity="top"
+                app:iconSize="15dp"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:background="@drawable/sms_background"
+     >
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content">
+
+
+                <RelativeLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_marginVertical="0.5in">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="SMS İLE ÖDEME AL"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textSize="25dp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_height="match_parent"
+                        android:layout_width="wrap_content">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="0.33in"
+                            android:layout_marginVertical="0.6in"
+                            android:background="@drawable/text_tx"
+                            android:gravity="center"
+                            android:hint="***********"
+                            android:textSize="40dp"
+                            android:textStyle="italic" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent">
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="0.3in"
+
+                            android:background="@drawable/btn_bg"
+                            android:gravity="center|top"
+                            android:text="SMS ILE ODMEME AL"
+                            android:textAllCaps="false"
+                            android:textSize="20dp"
+                            app:backgroundTint="#30BD5F" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_height="match_parent"
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+
+                        <RelativeLayout
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@android:color/transparent" >
+
+                                    <Button
+                                        android:layout_width="match_parent"
+                                        android:layout_height="80dp"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_alignParentBottom="true"
+                                        android:background="@drawable/ozan"
+                                        app:backgroundTint="@null"
+                                        tools:ignore="SpeakableTextPresentCheck" />
+                                </RelativeLayout>
+
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.33"
+                                    >
+
+                                    <androidx.constraintlayout.widget.ConstraintLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:background="@android:color/transparent"
+                                        android:transitionGroup="true"
+                                        tools:context=".MainActivity">
+
+
+                                        <com.google.android.material.bottomnavigation.BottomNavigationView
+                                            android:id="@+id/bottomNavigationView"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="80dp"
+                                            android:background="@color/white"
+                                            app:itemIconTint="@android:color/darker_gray"
+                                            app:itemTextColor="@color/white"
+                                            app:layout_constraintBottom_toBottomOf="parent"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintHorizontal_bias="0.5"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:menu="@menu/bottom_nav_menu">
+
+
+                                        </com.google.android.material.bottomnavigation.BottomNavigationView>
+                                    </androidx.constraintlayout.widget.ConstraintLayout>
+                                </RelativeLayout>
+
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+

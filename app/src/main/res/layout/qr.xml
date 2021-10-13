@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="#088c44">
+
+        <ImageView
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rupay_1"
+            />
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="@drawable/rupay_background"
+            android:padding="0dp"
+            android:isScrollContainer="false">
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+
+                <RelativeLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    >
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        app:backgroundTint="@null"
+                        app:icon="@drawable/up"
+                        app:iconGravity="textTop"
+                        app:iconSize="15dp"
+                        app:iconTint="#000000"
+                        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                </RelativeLayout>
+
+                            <LinearLayout
+                            android:layout_height="match_parent"
+                            android:layout_width="wrap_content"
+                            android:orientation="vertical"
+                            >
+
+
+                            <RelativeLayout
+                                android:layout_height="match_parent"
+                                android:layout_width="match_parent">
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="222dp"
+                                    android:orientation="horizontal">
+
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_margin="7dp"
+                                        android:layout_weight="0.5"
+                                        android:background="@android:color/transparent" />
+
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.33">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="326dp"
+                                            android:background="@drawable/qrcode"></TextView>
+
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.5">
+
+
+                                    </RelativeLayout>
+
+
+                                </LinearLayout>
+
+
+  </RelativeLayout>
+
+
+   </LinearLayout>
+
+
+                </LinearLayout>
+
+</LinearLayout>
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:background="@color/white"
+                    >
+
+
+
+                    <RelativeLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="80dp"
+                            android:gravity="center"
+                            android:hint="Bharat QR"
+                            android:textColorHint="@color/black"
+                            android:textSize="35dp"
+                            android:textStyle="normal" />
+
+
+                    </RelativeLayout>
+            </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/white">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <RelativeLayout
+                                android:layout_width="110dp"
+                                android:layout_height="wrap_content"
+
+                                >
+
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="60dp"
+                                    android:background="@drawable/ozan"
+
+                                    app:backgroundTint="@null"
+                                    tools:ignore="SpeakableTextPresentCheck" />
+                            </RelativeLayout>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="111dp"
+                                android:background="@android:color/transparent"
+                                android:transitionGroup="true"
+                                tools:context=".MainActivity">
+
+
+                                <com.google.android.material.bottomnavigation.BottomNavigationView
+                                    android:id="@+id/bottomNavigationView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="80dp"
+                                    android:background="@color/white"
+                                    app:itemIconTint="@android:color/darker_gray"
+                                    app:itemTextColor="@color/white"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.5"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:menu="@menu/bottom_nav_menu">
+
+
+                                </com.google.android.material.bottomnavigation.BottomNavigationView>
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+

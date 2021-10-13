@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#28242c"
+android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:background="@drawable/trans_button"
+        android:hapticFeedbackEnabled="true">
+
+        <Button
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|end"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/trans_button"
+            android:textAllCaps="false"
+            app:backgroundTint="@null"
+            app:icon="@drawable/more"
+            app:iconGravity="textTop"
+            app:iconPadding="0dp"
+            app:iconSize="40dp"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/trans_button"
+            android:gravity="center"
+            android:text="PLUS KONSOL LTD.ŞTİ"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|start"
+            android:layout_marginStart="25dp"
+            android:background="@drawable/trans_button"
+            app:icon="@drawable/menu"
+            app:iconGravity="textTop"
+            app:iconPadding="0dp"
+            app:iconSize="25dp"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+</LinearLayout>
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center|top"
+
+    >
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/white_baclground_edt"
+            android:drawableEnd="@drawable/search"
+            android:gravity="start"
+            android:hint="Ödeme Seçenekleri"
+            android:padding="16dp"
+            android:textAllCaps="false"
+            android:textColorHint="#959393"
+            android:textSize="18dp"
+            android:textStyle="italic" />
+
+</RelativeLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="top"
+
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="25dp"
+                        android:layout_marginVertical="10dp"
+                        android:background="@drawable/scroll_dsgn"
+
+                        android:text="İle Ödeme Yap"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14dp"
+                        app:backgroundTint="@null"
+                        app:icon="@drawable/rupay_1"
+                        app:iconGravity="textTop"
+                        app:iconSize="90dp"
+                        app:iconTintMode="multiply"
+                        tools:ignore="TextContrastCheck" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="25dp"
+                        android:layout_marginVertical="10dp"
+                        android:background="@drawable/scroll_dsgn"
+                        android:text="Kredi Kartı İle Öde"
+                        android:textColor="#FFFFFF"
+                        android:textSize="11dp"
+                        app:backgroundTint="#324CD0"
+                        app:icon="@drawable/mastercard"
+                        app:iconGravity="textTop"
+                        app:iconSize="90dp"
+                        app:iconTintMode="multiply"/>
+                </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="25dp"
+                    android:layout_marginVertical="10dp"
+                    android:background="@drawable/scroll_dsgn_qr"
+                    android:text="QR Code İle Öde"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13dp"
+                    app:backgroundTint="@null"
+                    app:icon="@drawable/qrcode"
+                    app:iconGravity="textTop"
+                    app:iconSize="90dp" />
+            </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="73dp"
+            android:background="@drawable/trans_button"
+            >
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|end"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/trans_button"
+                android:textAllCaps="false"
+                app:backgroundTint="@null"
+                app:icon="@drawable/more"
+                app:iconGravity="textTop"
+                app:iconPadding="0dp"
+                app:iconSize="40dp"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/card_btn"
+                android:layout_marginStart="30dp"
+                android:layout_marginHorizontal="10dp"
+                android:gravity="center"
+                android:text="Bakiye  :"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginHorizontal="90dp"
+                android:background="@drawable/trans_button"
+                android:text="452,46"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                tools:ignore="TouchTargetSizeCheck" />
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="70dp"
+                android:background="@drawable/trans_button"
+                android:hapticFeedbackEnabled="true">
+
+                <Button
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|end"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/trans_button"
+                    android:textAllCaps="false"
+                    app:backgroundTint="@null"
+                    app:icon="@drawable/radiobutton"
+                    app:iconGravity="textTop"
+                    app:iconPadding="0dp"
+                    app:iconSize="25dp"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    app:cardBackgroundColor="#388F3D"
+                    app:cardCornerRadius="250dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:gravity="center"
+                        app:cardCornerRadius="20dp">
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/scroll_dsgn"
+
+
+                            app:backgroundTint="#19D868"
+                            app:icon="@drawable/add"
+                            app:iconGravity="textTop"
+                            app:iconSize="30dp"
+                            app:iconTintMode="multiply"
+                            tools:ignore="TextContrastCheck,SpeakableTextPresentCheck" />
+
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.cardview.widget.CardView>
+
+                <Button
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|start"
+                    android:layout_marginStart="25dp"
+                    android:background="@drawable/trans_button"
+                    app:icon="@drawable/usericon"
+                    app:iconGravity="textTop"
+                    app:iconPadding="0dp"
+                    app:iconSize="25dp"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            </com.google.android.material.bottomnavigation.BottomNavigationView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+
+            >
+
+            <Button
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card_bottom"
+                app:backgroundTint="@null"
+                app:icon="@drawable/up"
+                app:iconGravity="textTop"
+                app:iconSize="15dp"
+                app:iconTint="#020202"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
